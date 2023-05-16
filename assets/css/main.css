@@ -12326,7 +12326,9 @@ footer .block-footer__column{
 
 .checkvisa {
 	height: 100vh;
-	background: url("../img/checkvisa-bg.jpg");
+	background-image: url("../img/checkvisa-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -12366,6 +12368,10 @@ footer .block-footer__column{
 	color: #000;
 	margin-bottom: 50px;
 	width: 70%;
+    appearance: none;
+    background-image: url(../img/down_arrow.png);
+    background-repeat: no-repeat; 
+    background-position: 98% center;
 }
 
 .checkvisa .checkvisacontent a{
@@ -12727,7 +12733,20 @@ footer .block-footer__column{
 .aboutusSection .swiper-wrapper .swiper-slide figure{
     position: relative;
     max-height: 700px;
-}   
+} 
+
+.aboutusSection .swiper-wrapper .swiper-slide figure{
+    transition: -webkit-clip-path 600ms cubic-bezier(0.545, 0.695, 0.27, 1.005);
+    transition: clip-path 600ms cubic-bezier(0.545, 0.695, 0.27, 1.005);
+    transition: clip-path 600ms cubic-bezier(0.545, 0.695, 0.27, 1.005), -webkit-clip-path 600ms cubic-bezier(0.545, 0.695, 0.27, 1.005);
+    -webkit-clip-path: polygon(0.3125rem 0.3125rem, calc(100% - 0.3125rem) 0.3125rem, calc(100% - 0.3125rem) calc(100% - 0.3125rem), 0.3125rem calc(100% - 0.3125rem));
+    clip-path: polygon(0.3125rem 0.3125rem, calc(100% - 0.3125rem) 0.3125rem, calc(100% - 0.3125rem) calc(100% - 0.3125rem), 0.3125rem calc(100% - 0.3125rem));
+}
+
+.aboutusSection .swiper-wrapper .swiper-slide figure:hover {
+    -webkit-clip-path: polygon(0.625rem 0, 100% 0.625rem, calc(100% - 0.625rem) 100%, 0 calc(100% - 0.625rem));
+    clip-path: polygon(0.625rem 0, 100% 0.625rem, calc(100% - 0.625rem) 100%, 0 calc(100% - 0.625rem)); 
+}
 
 .aboutusSection .swiper-wrapper .swiper-slide figcaption{
     position: absolute;
@@ -12814,7 +12833,7 @@ footer .block-footer__column{
 
 .aboutusSection .swiper-button-prev, 
 .aboutusSection .swiper-rtl .swiper-button-next {
-    left: var(--swiper-navigation-sides-offset, 460px);
+    left: var(--swiper-navigation-sides-offset, 1020px);
     background: #fff;
     padding: 22px;
     border-radius: 100%;
@@ -12838,8 +12857,20 @@ footer .block-footer__column{
     font-weight: 600;
 }
 
+.swiper-pagination{
+    margin-top: 50px;
+}
+
+.aboutusSection .swiper-pagination-bullet-active{
+    background: #FF8000;
+}
+
 .aboutusSection .content{
     padding: 0 5% 5% 50%;
+}
+
+.aboutusSection .swiper-pagination{
+    opacity: 0;
 }
 
 /* Tablet Responsiveness CSS here */
@@ -13017,12 +13048,31 @@ footer .block-footer__column{
     .aboutusSection .swiper-button-next, 
     .aboutusSection .swiper-rtl .swiper-button-prev {
         right: var(--swiper-navigation-sides-offset, 20px);
+        display: none;
     }
 
     .aboutusSection .swiper-button-prev, 
     .aboutusSection .swiper-rtl .swiper-button-next {
         left: var(--swiper-navigation-sides-offset, 20px);
+        display: none;
     }
+
+    .aboutusSection .swiper-wrapper .swiper-slide figcaption a.explorebtn{
+        margin-bottom: 20px;
+    }
+    .aboutusSection .content ul {
+        margin: 30px 0;
+    }
+    .aboutusSection {
+        padding: 70px 0 50px;
+    }
+    .aboutusSection .swiper-pagination{
+        opacity: 1;
+    }
+/*    .swiper-pagination-bullet{
+        background: #fff;
+        opacity: 0.5;
+    }*/
 }
 
 @media (max-width: 767px) {
