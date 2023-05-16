@@ -18,7 +18,6 @@
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
     <body data-site-id="1">
-        <!-- <script type="text/javascript" src="https://d1b3llzbo1rqxo.cloudfront.net/attributer.js"></script> -->
         <div id="application" class="js-application">
             <nav class="navigation js-navigation" data-component="navigation">
                 <div class=" menu-mobile js-menu-mobile">
@@ -30,6 +29,7 @@
                             <div class="dropdown js-dropdown">
                                 <div class="dropdown__label"></div>
                                 <div class="dropdown__container-select">
+
                                     <select id="currency-select-mobile" class="dropdown__select js-select"></select>
                                 </div>
                                 <button class="dropdown__button button js-button" aria-labelledby="dropdown-label-currency-select-mobile dropdown-label-button-currency-select-mobile" aria-haspopup="listbox" type="button">
@@ -84,91 +84,30 @@
                                 <li>
                                     <a href="#">
                                         <img src="assets/img/create.png" alt="img" />
-                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17.571" height="13.765" viewBox="0 0 17.571 13.765">
-                                          <defs>
-                                            <clipPath id="clip-path">
-                                              <rect id="Rectangle_1532" data-name="Rectangle 1532" width="17.571" height="13.765" fill="#ffaf27" stroke="#ffaf28" stroke-width="0.2"/>
-                                            </clipPath>
-                                          </defs>
-                                          <g id="Group_41779" data-name="Group 41779" transform="translate(0 0)">
-                                            <g id="Group_41778" data-name="Group 41778" transform="translate(0 0)" clip-path="url(#clip-path)">
-                                              <path id="Path_50219" data-name="Path 50219" d="M14.845,13.394a8.027,8.027,0,0,0-6.2-4.859,4.353,4.353,0,1,0-2.433,0,8.027,8.027,0,0,0-6.2,4.859.269.269,0,0,0,.249.372H14.6a.269.269,0,0,0,.249-.372M3.617,4.354A3.815,3.815,0,1,1,7.432,8.169,3.82,3.82,0,0,1,3.617,4.354M.683,13.228a7.486,7.486,0,0,1,13.5,0Z" transform="translate(0 -0.001)" fill="#ffaf27" stroke="#ffaf28" stroke-width="0.2"/>
-                                              <path id="Path_50220" data-name="Path 50220" d="M64.978,38.693H63.784V37.5a.269.269,0,1,0-.538,0v1.194H62.053a.269.269,0,1,0,0,.538h1.194v1.194a.269.269,0,1,0,.538,0V39.231h1.194a.269.269,0,0,0,0-.538" transform="translate(-48.897 -29.464)" fill="#ffaf27" stroke="#ffaf28" stroke-width="0.2"/>
-                                              <path id="Path_50221" data-name="Path 50221" d="M57.572,37.887a3.145,3.145,0,0,1-.414-.028l-.143-.019-.044-.186.2-.071-.2.051-.006-.025c-.008-.03-.015-.057-.023-.083L56.9,37.4l-.027-.027v-.05l-.026-.073c-.014-.036-.026-.067-.039-.1l.03-.018-.041-.006-.029-.065-.068-.14-.054-.1c-.02-.035-.037-.062-.054-.09l-.076-.114c-.024-.033-.043-.06-.062-.084l-.115-.146a2.977,2.977,0,0,0-.811-.749l-.027-.016-.125-.07.08-.194-.1.182-.123-.064-.1-.049h0l-.291-.123-.111-.04-.234-.075-.012-.139c-.008-.091-.013-.183-.013-.274a3.1,3.1,0,1,1,3.1,3.105m-.22-.426a2.688,2.688,0,1,0-2.468-2.679c0,.034,0,.068,0,.1l.1.036.232.1h.164v.076l.006,0,.136.069-.075.2.1-.185.028.015.135.076.024.014a3.359,3.359,0,0,1,.929.851l.119.151c.022.028.045.06.072.1l.019.028c.018.025.034.05.05.074l.022.034c.02.031.038.062.056.093l.012.021c.012.021.031.055.052.095l.014.028c.017.033.03.059.042.084l.019.04c.013.029.026.058.039.088l.012.027c.014.034.029.069.044.109l.055.141.044.15.019.068m-.42-.389v.009l.055-.032Z" transform="translate(-43.106 -25.07)" fill="#ffaf27" stroke="#ffaf28" stroke-width="0.2"/>
-                                            </g>
-                                          </g>
-                                        </svg> -->
                                         Create Account
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <img src="assets/img/draft.png" alt="img" />
-                                       <!--  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11.5" height="15.21" viewBox="0 0 11.5 15.21">
-                                          <defs>
-                                            <clipPath id="clip-path">
-                                              <rect id="Rectangle_1530" data-name="Rectangle 1530" width="11.5" height="15.21" fill="#ffaf27" stroke="#ffaf27" stroke-width="0.2"/>
-                                            </clipPath>
-                                          </defs>
-                                          <g id="Group_41775" data-name="Group 41775" transform="translate(0 0)">
-                                            <g id="Group_41774" data-name="Group 41774" transform="translate(0 0)" clip-path="url(#clip-path)">
-                                              <path id="Path_50214" data-name="Path 50214" d="M18.127,30.987l-1.5-.217-.67-1.357a.542.542,0,0,0-.972,0l-.67,1.357-1.5.217a.542.542,0,0,0-.3.925L13.6,32.968l-.256,1.492a.541.541,0,0,0,.787.571l1.34-.7,1.34.7a.542.542,0,0,0,.786-.571l-.256-1.492,1.084-1.056a.542.542,0,0,0-.3-.925m-1.17,1.59a.542.542,0,0,0-.156.48l.254,1.481-1.33-.7a.541.541,0,0,0-.5,0l-1.33.7.254-1.481a.542.542,0,0,0-.156-.48l-1.076-1.049,1.487-.216a.542.542,0,0,0,.408-.3l.665-1.347.665,1.347a.542.542,0,0,0,.408.3l1.487.216Z" transform="translate(-9.724 -22.91)" fill="#ffaf27" stroke="#ffaf27" stroke-width="0.2"/>
-                                              <path id="Path_50215" data-name="Path 50215" d="M11.5,4.373c0-.009,0-.017,0-.026s0-.008,0-.013l0-.014,0-.014,0-.012,0-.013,0-.012-.005-.012-.006-.013-.006-.011-.007-.012-.008-.011-.008-.01-.016-.018,0,0L7.32.081l0,0L7.3.062,7.29.055,7.279.046,7.267.039,7.256.033,7.243.027,7.231.021l-.012,0-.014,0-.012,0-.015,0L7.167,0,7.153,0H.755A.756.756,0,0,0,0,.755v13.7a.756.756,0,0,0,.755.755h9.99a.756.756,0,0,0,.755-.755V4.374h0M7.4.938,10.562,4.1H7.607A.206.206,0,0,1,7.4,3.894Zm3.344,13.723H.755a.206.206,0,0,1-.206-.206V.755A.206.206,0,0,1,.755.55h6.1V3.894a.756.756,0,0,0,.755.755h3.344v9.806a.206.206,0,0,1-.206.206" transform="translate(0 0)" fill="#ffaf27" stroke="#ffaf27" stroke-width="0.2"/>
-                                            </g>
-                                          </g>
-                                        </svg> -->
                                         Draft Applications
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <img src="assets/img/faq.png" alt="img" />
-                                       <!--  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12.474" height="13.303" viewBox="0 0 12.474 13.303">
-                                          <defs>
-                                            <clipPath id="clip-path">
-                                              <rect id="Rectangle_1531" data-name="Rectangle 1531" width="12.474" height="13.303" transform="translate(0 0)" fill="#ffaf27" stroke="#ffaf27" stroke-width="0.1"/>
-                                            </clipPath>
-                                          </defs>
-                                          <g id="Group_41776" data-name="Group 41776" clip-path="url(#clip-path)">
-                                            <path id="Path_50216" data-name="Path 50216" d="M10.633,1.555A6.756,6.756,0,0,0,6.237,0a6.756,6.756,0,0,0-4.4,1.555A4.971,4.971,0,0,0,0,5.354,4.9,4.9,0,0,0,1.3,8.629l-.459,2.5L.492,13.021a.239.239,0,0,0,.358.248l2.812-1.694,1.615-.931a7.332,7.332,0,0,0,.961.063,6.756,6.756,0,0,0,4.4-1.555,4.97,4.97,0,0,0,1.841-3.8,4.971,4.971,0,0,0-1.841-3.8m-4.4,8.676a6.823,6.823,0,0,1-.975-.07.24.24,0,0,0-.153.029l-1.684.971,0,0h0L1.058,12.587l.255-1.374L1.793,8.6a.238.238,0,0,0-.061-.207A4.384,4.384,0,0,1,.477,5.354C.477,2.665,3.061.477,6.237.477S12,2.665,12,5.354s-2.584,4.877-5.76,4.877" transform="translate(0 0)" fill="#ffaf27" stroke="#ffaf27" stroke-width="0.1"/>
-                                            <path id="Path_50217" data-name="Path 50217" d="M25.664,12.61a1.612,1.612,0,0,0-1.635,1.612.238.238,0,0,0,.477,0,1.135,1.135,0,0,1,1.151-1.135,1.143,1.143,0,0,1,1.119,1.119,2.087,2.087,0,0,1-.693,1.2,1.961,1.961,0,0,0-.681,1.513v.171a.238.238,0,1,0,.477,0v-.171a1.5,1.5,0,0,1,.556-1.191,2.439,2.439,0,0,0,.818-1.525,1.617,1.617,0,0,0-1.589-1.589" transform="translate(-19.587 -10.279)" fill="#ffaf27" stroke="#ffaf27" stroke-width="0.1"/>
-                                            <path id="Path_50218" data-name="Path 50218" d="M31.377,42.265a.353.353,0,1,0,.353.353.353.353,0,0,0-.353-.353m0,.477a.124.124,0,1,1,.124-.124.124.124,0,0,1-.124.124" transform="translate(-25.289 -34.452)" fill="#ffaf27" stroke="#ffaf27" stroke-width="0.1"/>
-                                          </g>
-                                        </svg> -->
                                         FAQ
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <img src="assets/img/login.png" alt="img" />
-                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19.137" height="12.833" viewBox="0 0 19.137 12.833">
-                                          <defs>
-                                            <clipPath id="clip-path">
-                                              <rect id="Rectangle_1529" data-name="Rectangle 1529" width="19.137" height="12.833" transform="translate(0 0)" fill="#ffaf27"/>
-                                            </clipPath>
-                                          </defs>
-                                          <g id="Group_41773" data-name="Group 41773" transform="translate(0 0)">
-                                            <g id="Group_41772" data-name="Group 41772" transform="translate(0 0)" clip-path="url(#clip-path)">
-                                              <path id="Path_50213" data-name="Path 50213" d="M19.129,11.407a4.759,4.759,0,0,0-3.343-3.528,2.668,2.668,0,1,0-2.6,0A4.711,4.711,0,0,0,11.324,8.9,6.779,6.779,0,0,0,8.142,7.241a3.767,3.767,0,1,0-2.908,0A6.844,6.844,0,0,0,.008,12.421a.338.338,0,0,0,.33.413H13.033a.338.338,0,0,0,.33-.413c-.046-.2-.1-.4-.166-.6h5.6a.338.338,0,0,0,.33-.413M12.494,5.55a1.991,1.991,0,1,1,1.991,1.991A1.994,1.994,0,0,1,12.494,5.55M3.6,3.768a3.09,3.09,0,1,1,3.09,3.09A3.093,3.093,0,0,1,3.6,3.768M.776,12.157A6.215,6.215,0,0,1,6.685,7.763a6.123,6.123,0,0,1,4.4,1.842,6.2,6.2,0,0,1,.583.685h0c.073.1.145.2.212.309h0c.067.1.132.213.193.322h0l0,0q.035.063.069.126h0v0l0,0c.094.178.18.363.255.548s.138.363.194.549Zm12.161-1.015c-.06-.135-.124-.268-.193-.4h0v0l0,0c-.025-.047-.051-.094-.077-.141h0l0,0h0c-.067-.12-.139-.239-.213-.355h0c-.074-.116-.153-.231-.235-.343h0l0,0h0q-.073-.1-.149-.2l0,0q-.107-.136-.222-.267L11.8,9.382a4.046,4.046,0,0,1,2.686-1.009,4.116,4.116,0,0,1,3.867,2.769Z" transform="translate(0 -0.001)" fill="#ffaf27"/>
-                                            </g>
-                                          </g>
-                                        </svg> -->
                                         Login In
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
                                         <img src="assets/img/call.png" alt="img" />
-                                        <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16.934" height="16.934" viewBox="0 0 16.934 16.934">
-                                          <defs>
-                                            <clipPath id="clip-path">
-                                              <rect id="Rectangle_1534" data-name="Rectangle 1534" width="16.934" height="16.934" transform="translate(0 0)" fill="none"/>
-                                            </clipPath>
-                                          </defs>
-                                          <g id="Group_41781" data-name="Group 41781" clip-path="url(#clip-path)">
-                                            <path id="Path_50222" data-name="Path 50222" d="M16.5,12.745,12.6,8.852a.3.3,0,0,0-.429,0L10.626,10.4a1.146,1.146,0,0,1-1.62,0L6.536,7.928a1.145,1.145,0,0,1,0-1.62L8.082,4.761a.3.3,0,0,0,0-.429L4.189.438a1.5,1.5,0,0,0-2.115,0L1.211,1.3A4.6,4.6,0,0,0,.072,5.362,8.221,8.221,0,0,0,2.451,9.843l4.64,4.64a8.22,8.22,0,0,0,4.481,2.378,6.109,6.109,0,0,0,.923.072,4.332,4.332,0,0,0,3.139-1.211l.862-.862a1.5,1.5,0,0,0,0-2.115m-.429,1.686-.862.862a4.006,4.006,0,0,1-3.541.969A7.612,7.612,0,0,1,7.52,14.054L2.88,9.414A7.611,7.611,0,0,1,.672,5.27a4.006,4.006,0,0,1,.968-3.541L2.5.867a.89.89,0,0,1,1.257,0L7.439,4.546,6.106,5.879a1.754,1.754,0,0,0,0,2.478l2.471,2.471a1.752,1.752,0,0,0,2.478,0L12.388,9.5l3.679,3.679a.889.889,0,0,1,0,1.257" transform="translate(0 0)" fill="#1a1818"/>
-                                          </g>
-                                        </svg> -->
                                         0094 71 9967888
                                     </a>
                                 </li>
@@ -275,7 +214,7 @@
                                     </div>
                                     <div class="swiper-button-next"></div>
                                     <div class="swiper-button-prev"></div>
-                                    <!-- <div class="swiper-pagination"></div> -->
+                                    <div class="swiper-pagination"></div>
                                 </div>
                                 </div>
                             </div>
@@ -538,6 +477,10 @@
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
             },
             breakpoints: {
                 320: {
